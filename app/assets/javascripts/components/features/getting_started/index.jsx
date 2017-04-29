@@ -12,6 +12,7 @@ const messages = defineMessages({
   public_timeline: { id: 'navigation_bar.public_timeline', defaultMessage: 'Federated timeline' },
   navigation_subheading: { id: 'column_subheading.navigation', defaultMessage: 'Navigation'},
   settings_subheading: { id: 'column_subheading.settings', defaultMessage: 'Settings'},
+  ue4_subheading: { id: 'column_subheading.ue4', defaultMessage: 'UE4'},
   community_timeline: { id: 'navigation_bar.community_timeline', defaultMessage: 'Local timeline' },
   preferences: { id: 'navigation_bar.preferences', defaultMessage: 'Preferences' },
   follow_requests: { id: 'navigation_bar.follow_requests', defaultMessage: 'Follow requests' },
@@ -19,7 +20,10 @@ const messages = defineMessages({
   favourites: { id: 'navigation_bar.favourites', defaultMessage: 'Favourites' },
   blocks: { id: 'navigation_bar.blocks', defaultMessage: 'Blocked users' },
   mutes: { id: 'navigation_bar.mutes', defaultMessage: 'Muted users' },
-  info: { id: 'navigation_bar.info', defaultMessage: 'Extended information' }
+  info: { id: 'navigation_bar.info', defaultMessage: 'Extended information' },
+  ue4_document: { id: 'navigation_bar.ue4_document', defaultMessage: 'Document' },
+  ue4_forums: { id: 'navigation_bar.ue4_forums', defaultMessage: 'Forums' },
+  ue4_answerhub: { id: 'navigation_bar.ue4_answerhub', defaultMessage: 'Answer Hub' }
 });
 
 const mapStateToProps = state => ({
@@ -47,6 +51,10 @@ const GettingStarted = ({ intl, me }) => {
         <ColumnLink icon='book' text={intl.formatMessage(messages.info)} href='/about/more' />
         <ColumnLink icon='cog' text={intl.formatMessage(messages.preferences)} href='/settings/preferences' />
         <ColumnLink icon='sign-out' text={intl.formatMessage(messages.sign_out)} href='/auth/sign_out' method='delete' />
+        <ColumnSubheading text={intl.formatMessage(messages.ue4)}/>
+        <ColumnLink text={intl.formatMessage(messages.ue4_document)} href='https://docs.unrealengine.com/latest/JPN/index.html' />
+        <ColumnLink text={intl.formatMessage(messages.ue4_forums)} href='https://forums.unrealengine.com/forumdisplay.php?19-Japan' />
+        <ColumnLink text={intl.formatMessage(messages.ue4_answerhub)} href='https://answers.unrealengine.com/spaces/16/japanese.html' />
       </div>
     </Column>
   );

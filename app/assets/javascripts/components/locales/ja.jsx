@@ -26,6 +26,7 @@ const ja = {
   "column_back_button.label": "戻る",
   "column_subheading.navigation": "ナビゲーション",
   "column_subheading.settings": "設定",
+  "column_subheading.ue4": "UE4",
   "compose_form.lock_disclaimer": "あなたのアカウントは{locked}になっていません。誰でもあなたをフォローすることができ、フォロワー限定の投稿を見ることができます。",
   "compose_form.lock_disclaimer.lock": "非公開",
   "compose_form.placeholder": "今なにしてる？",
