@@ -5,7 +5,7 @@ RSpec.describe AtomSerializer do
   let(:receiver) { Fabricate(:account, username: 'Symmetra') }
 
   before do
-    stub_request(:get, "https://cb6e6126.ngrok.io/avatars/original/missing.png").to_return(status: 404)
+    stub_request(:get, "https://cb6e6126.ngrok.io/avatars/original/missing2.png").to_return(status: 404)
     stub_request(:get, "https://cb6e6126.ngrok.io/headers/original/missing.png").to_return(status: 404)
   end
 
