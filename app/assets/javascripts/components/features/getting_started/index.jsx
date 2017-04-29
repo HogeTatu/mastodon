@@ -51,7 +51,7 @@ const GettingStarted = ({ intl, me }) => {
         <ColumnLink icon='book' text={intl.formatMessage(messages.info)} href='/about/more' />
         <ColumnLink icon='cog' text={intl.formatMessage(messages.preferences)} href='/settings/preferences' />
         <ColumnLink icon='sign-out' text={intl.formatMessage(messages.sign_out)} href='/auth/sign_out' method='delete' />
-        <ColumnSubheading text={intl.formatMessage(messages.ue4)}/>
+        <ColumnSubheading text={intl.formatMessage(messages.ue4_subheading)}/>
         <ColumnLink text={intl.formatMessage(messages.ue4_document)} href='https://docs.unrealengine.com/latest/JPN/index.html' />
         <ColumnLink text={intl.formatMessage(messages.ue4_forums)} href='https://forums.unrealengine.com/forumdisplay.php?19-Japan' />
         <ColumnLink text={intl.formatMessage(messages.ue4_answerhub)} href='https://answers.unrealengine.com/spaces/16/japanese.html' />
