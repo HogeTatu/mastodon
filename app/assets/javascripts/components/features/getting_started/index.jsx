@@ -48,9 +48,9 @@ const GettingStarted = ({ intl, me }) => {
         <ColumnLink icon='cog' text={intl.formatMessage(messages.preferences)} href='/settings/preferences' />
         <ColumnLink icon='sign-out' text={intl.formatMessage(messages.sign_out)} href='/auth/sign_out' method='delete' />
         <ColumnSubheading text='UE4' />
-        <ColumnLink text={ドキュメント} href=https://docs.unrealengine.com/latest/JPN/index.html />
-        <ColumnLink text={フォーラム} href=https://forums.unrealengine.com/forumdisplay.php?19-Japan />
-        <ColumnLink text={アンサーハブ} href=https://answers.unrealengine.com/spaces/16/japanese.html />
+        <ColumnLink text='ドキュメント' href=https://docs.unrealengine.com/latest/JPN/index.html />
+        <ColumnLink text='フォーラム' href=https://forums.unrealengine.com/forumdisplay.php?19-Japan />
+        <ColumnLink text='アンサーハブ' href=https://answers.unrealengine.com/spaces/16/japanese.html />
       </div>
 
       <div className='scrollable optionally-scrollable' style={{ display: 'flex', flexDirection: 'column' }}>
