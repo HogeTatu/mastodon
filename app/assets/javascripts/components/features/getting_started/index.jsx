@@ -1,4 +1,4 @@
-import Column from '../ui/components/column';
+﻿import Column from '../ui/components/column';
 import ColumnLink from '../ui/components/column_link';
 import ColumnSubheading from '../ui/components/column_subheading';
 import { Link } from 'react-router';
@@ -48,9 +48,15 @@ const GettingStarted = ({ intl, me }) => {
         <ColumnLink icon='cog' text={intl.formatMessage(messages.preferences)} href='/settings/preferences' />
         <ColumnLink icon='sign-out' text={intl.formatMessage(messages.sign_out)} href='/auth/sign_out' method='delete' />
         <ColumnSubheading text='UE4' />
-        <ColumnLink text='ドキュメント' href=https://docs.unrealengine.com/latest/JPN/index.html />
-        <ColumnLink text='フォーラム' href=https://forums.unrealengine.com/forumdisplay.php?19-Japan />
-        <ColumnLink text='アンサーハブ' href=https://answers.unrealengine.com/spaces/16/japanese.html />
+        <ColumnLink text={ドキュメント href=https://docs.unrealengine.com/latest/JPN/index.html />
+        <ColumnLink text={フォーラム} href=https://forums.unrealengine.com/forumdisplay.php?19-Japan />
+        <ColumnLink text={アンサーハブ} href=https://answers.unrealengine.com/spaces/16/japanese.html />
+      </div>
+
+      <div className='scrollable optionally-scrollable' style={{ display: 'flex', flexDirection: 'column' }}>
+        <div className='static-content getting-started'>
+          <p><FormattedMessage id='getting_started.open_source_notice' defaultMessage='Mastodon is open source software. You can contribute or report issues on GitHub at {github}. {apps}.' values={{ github: <a href="https://github.com/tootsuite/mastodon" target="_blank">tootsuite/mastodon</a>, apps: <a href="https://github.com/tootsuite/documentation/blob/master/Using-Mastodon/Apps.md" target="_blank"><FormattedMessage id='getting_started.apps' defaultMessage='Various apps are available' /></a> }} /></p>
+        </div>
       </div>
     </Column>
   );
