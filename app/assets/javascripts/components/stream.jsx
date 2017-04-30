@@ -5,7 +5,7 @@ const createWebSocketURL = (url) => {
 
   a.href     = url;
   a.href     = a.href;
-  a.protocol = a.protocol.replace('http', 'ws');
+  a.protocol = a.protocol.replace('http', 'wss');
 
   return a.href;
 };
