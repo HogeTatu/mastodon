@@ -83,6 +83,7 @@ const ja = {
   "navigation_bar.ue4_document": "公式ドキュメント",
   "navigation_bar.ue4_forums": "公式フォーラム",
   "navigation_bar.ue4_answerhub": "アンサーハブ",
+  "navigation_bar.ue4_gray": "Grayちゃん Official",
   "navigation_bar.mutes": "ミュートしたユーザー",
   "navigation_bar.preferences": "ユーザー設定",
   "navigation_bar.public_timeline": "連合タイムライン",

@@ -23,7 +23,8 @@ const messages = defineMessages({
   info: { id: 'navigation_bar.info', defaultMessage: 'Extended information' },
   ue4_document: { id: 'navigation_bar.ue4_document', defaultMessage: 'Document' },
   ue4_forums: { id: 'navigation_bar.ue4_forums', defaultMessage: 'Forums' },
-  ue4_answerhub: { id: 'navigation_bar.ue4_answerhub', defaultMessage: 'Answer Hub' }
+  ue4_answerhub: { id: 'navigation_bar.ue4_answerhub', defaultMessage: 'Answer Hub' },
+  ue4_gray: { id: 'navigation_bar.ue4_gray', defaultMessage: 'Gray-chan Official' }
 });
 
 const mapStateToProps = state => ({
@@ -49,12 +50,11 @@ const GettingStarted = ({ intl, me }) => {
         <ColumnLink icon='ban' text={intl.formatMessage(messages.blocks)} to='/blocks' />
         <ColumnSubheading text={intl.formatMessage(messages.settings_subheading)}/>
         <ColumnLink icon='book' text={intl.formatMessage(messages.info)} href='/about/more' />
-        <ColumnLink icon='cog' text={intl.formatMessage(messages.preferences)} href='/settings/preferences' />
-        <ColumnLink icon='sign-out' text={intl.formatMessage(messages.sign_out)} href='/auth/sign_out' method='delete' />
         <ColumnSubheading text={intl.formatMessage(messages.ue4_subheading)}/>
         <ColumnLink text={intl.formatMessage(messages.ue4_document)} href='https://docs.unrealengine.com/latest/JPN/index.html' />
         <ColumnLink text={intl.formatMessage(messages.ue4_forums)} href='https://forums.unrealengine.com/forumdisplay.php?19-Japan' />
         <ColumnLink text={intl.formatMessage(messages.ue4_answerhub)} href='https://answers.unrealengine.com/spaces/16/japanese.html' />
+        <ColumnLink text={intl.formatMessage(messages.ue4_gray)} href='http://www.gray-chan.com/' />
       </div>
 
       <div className='scrollable optionally-scrollable' style={{ display: 'flex', flexDirection: 'column' }}>
