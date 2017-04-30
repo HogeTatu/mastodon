@@ -7,7 +7,7 @@
 # For more information, see docs/Running-Mastodon/Administration-guide.md
 #
 defaults: &defaults
-  site_title: '【非公式】UE4開発者マストドン'
+  site_title: '[非公式] UE4 Developer Mastodon'
   site_description: ''
   site_extended_description: ''
   site_contact_username: ''
