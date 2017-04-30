@@ -82,6 +82,7 @@ const ja = {
   "navigation_bar.logout": "ログアウト",
   "navigation_bar.ue4_document": "公式ドキュメント",
   "navigation_bar.ue4_forums": "公式フォーラム",
+  "navigation_bar.ue4_blog": "公式ブログ",
   "navigation_bar.ue4_answerhub": "アンサーハブ",
   "navigation_bar.ue4_gray": "Grayちゃん Official",
   "navigation_bar.mutes": "ミュートしたユーザー",

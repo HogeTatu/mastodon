@@ -21,8 +21,9 @@ const messages = defineMessages({
   blocks: { id: 'navigation_bar.blocks', defaultMessage: 'Blocked users' },
   mutes: { id: 'navigation_bar.mutes', defaultMessage: 'Muted users' },
   info: { id: 'navigation_bar.info', defaultMessage: 'Extended information' },
-  ue4_document: { id: 'navigation_bar.ue4_document', defaultMessage: 'Document' },
-  ue4_forums: { id: 'navigation_bar.ue4_forums', defaultMessage: 'Forums' },
+  ue4_document: { id: 'navigation_bar.ue4_document', defaultMessage: 'UE4 Document' },
+  ue4_forums: { id: 'navigation_bar.ue4_forums', defaultMessage: 'UE4 Forums' },
+  ue4_blog: { id: 'navigation_bar.ue4_blog', defaultMessage: 'UE4 Blog' },
   ue4_answerhub: { id: 'navigation_bar.ue4_answerhub', defaultMessage: 'Answer Hub' },
   ue4_gray: { id: 'navigation_bar.ue4_gray', defaultMessage: 'Gray-chan Official' }
 });
@@ -53,6 +54,7 @@ const GettingStarted = ({ intl, me }) => {
         <ColumnSubheading text={intl.formatMessage(messages.ue4_subheading)}/>
         <ColumnLink text={intl.formatMessage(messages.ue4_document)} href='https://docs.unrealengine.com/latest/JPN/index.html' />
         <ColumnLink text={intl.formatMessage(messages.ue4_forums)} href='https://forums.unrealengine.com/forumdisplay.php?19-Japan' />
+        <ColumnLink text={intl.formatMessage(messages.ue4_blog)} href='https://www.unrealengine.com/ja/blog' />
         <ColumnLink text={intl.formatMessage(messages.ue4_answerhub)} href='https://answers.unrealengine.com/spaces/16/japanese.html' />
         <ColumnLink text={intl.formatMessage(messages.ue4_gray)} href='http://www.gray-chan.com/' />
       </div>
